@@ -1,0 +1,11 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "reinaldo",
+            "email": "reinaldo@gmail.com",
+            "data": "1994-10-15",
+            "telefone": "62999999999"
+        }
+    ]
+}
