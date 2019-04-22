@@ -1,13 +1,20 @@
-<h1>USUARIOS</h1>
-
-<div class="row">
-    <div class="col">
-
+<div class="row justify-content-center mb-3">
+    <div class="col-10">
+        <div class="row m-0 justify-content-between">
+            <div class="col-2">
+                <h2>USUARIOS</h2>
+            </div>
+            <div class="col-2 float-right">
+                <button class="col btn btn-success text-white">
+                    <i class="fas fa-user-plus mr-2"></i>ADICIONAR
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col">
+<div class="row justify-content-center">
+    <div class="col-10">
         <table class="table table-striped">
             <thead>
                 <tr class="text-uppercase">
@@ -19,12 +26,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr *ngFor="let u of usuarios; let i=index">
                     <th scope="row">1</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{{ u.nome }}</td>
+                    <td>{{ u.telefone }}</td>
+                    <td>{{ u.email }}</td>
+                    <td>{{ u.data }}</td>
                 </tr>
             </tbody>
         </table>

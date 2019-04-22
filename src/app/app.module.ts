@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { UsuarioAdicionarComponent } from './usuario/usuario-adicionar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      HttpClientModule
    ],
    providers: [],
    bootstrap: [
