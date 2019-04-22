@@ -1,39 +1,39 @@
-<div class="row justify-content-center mb-3">
-    <div class="col-10">
-        <div class="row m-0 justify-content-between">
-            <div class="col-2">
-                <h2>USUARIOS</h2>
+<section class="row justify-content-center mb-3 rounded">
+
+    <div class="col-12 col-md-10 pt-3 bg-white rounded-top">
+        <div class="row m-md-0 mb-2 justify-content-between">
+            <div class="col-12 col-md-3 p-0">
+                <h2><i class="fas fa-users mr-2"></i>Usuários</h2>
             </div>
-            <div class="col-2 float-right">
+            <div class="col-12 col-md-2 p-0 float-right">
                 <button class="col btn btn-success text-white">
                     <i class="fas fa-user-plus mr-2"></i>ADICIONAR
                 </button>
             </div>
         </div>
     </div>
-</div>
 
-<div class="row justify-content-center">
-    <div class="col-10">
+    <div class="col-12 col-md-10 bg-white rounded-bottom table-responsive">
         <table class="table table-striped">
             <thead>
                 <tr class="text-uppercase">
                     <th scope="col">#</th>
-                    <th scope="col">nome</th>
-                    <th scope="col">telefone</th>
-                    <th scope="col">email</th>
-                    <th scope="col">data</th>
+                    <th scope="col">nome <i class="far fa-id-card ml-2"></i></th>
+                    <th scope="col">telefone<i class="fas fa-phone ml-2"></i></th>
+                    <th scope="col">email<i class="fas fa-envelope ml-2"></i></th>
+                    <th scope="col">data<i class="far fa-calendar-alt ml-2"></i></th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let u of usuarios; let i=index">
                     <th scope="row">1</th>
-                    <td>{{ u.nome }}</td>
+                    <td class="text-capitalize">{{ u.nome }}</td>
                     <td>{{ u.telefone }}</td>
                     <td>{{ u.email }}</td>
-                    <td>{{ u.data }}</td>
+                    <td>{{ u.data | date:"dd/MM/yyyy" }}</td>
                 </tr>
             </tbody>
         </table>
+
     </div>
-</div>
+</section>
